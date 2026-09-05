@@ -1,0 +1,43 @@
+# ─────────────────────────────────────
+# Ghostty — Minimal Dark
+# ─────────────────────────────────────
+
+# Window
+window-decoration = none
+background = 1e1e2e
+background-opacity = 1.0
+background-blur-radius = 20
+maximize = true
+window-width = 82
+window-height = 20
+
+# Spacing
+window-padding-x = 14
+window-padding-y = 12
+
+# Font
+font-family = JetBrains Mono
+font-size = 11
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+
+# Colors
+foreground = b4befe
+background = 1e1e2e
+
+# Selection
+selection-foreground = cdd6f4
+selection-background = 11111b
+
+# Scrollback
+scrollback-limit = 10000
+
+# Mouse
+mouse-hide-while-typing = true
+
+# Shell integration
+shell-integration = detect
+
+keybind = ctrl+shift+f=toggle_maximize

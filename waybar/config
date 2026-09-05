@@ -1,0 +1,112 @@
+{
+    "layer": "top",
+    "position": "top",
+
+    //"margin": 5,
+
+    "height": 50,
+
+    "spacing": 6,
+
+    "modules-left": [
+        "custom/workspace"
+    ],
+
+    "modules-center": [
+        "mpris",
+        "custom/pikachu"
+    ],
+
+    "modules-right": [
+        "tray",
+        "clock",
+        "pulseaudio",
+        "battery",
+        "network"
+    ],
+
+    "custom/workspace": {
+        "exec": "~/.config/waybar/workspaces.sh",
+        "interval": 1,
+        "format": "{}",
+        "escape": false
+    },
+
+    "mpris": {
+      "format": "{status_icon}  {artist} - {title}",
+      "format-paused": "{status_icon}  {artist} - {title}",
+      "format-stopped": "",
+      "max-length": 40,
+
+      "status-icons": {
+          "playing": "󰐊",
+          "paused": "󰏤",
+          "stopped": "󰓛"
+      },
+
+      "on-click": "playerctl play-pause",
+      "on-click-middle": "playerctl next",
+      "on-click-right": "playerctl previous",
+
+      "tooltip-format": "{player}\n{artist} - {title}"
+    },
+
+    "clock": {
+        "format": "󰥔  {:%H:%M}",
+        "tooltip-format": "{:%A, %d %B %Y}"
+    },
+
+    "pulseaudio": {
+        "format": "󰕾  {volume}%",
+        "format-muted": "󰖁  Muted",
+        "on-click": "pavucontrol"
+    },
+
+    "battery": {
+        "bat": "BAT1",
+        "format": "{icon}  {capacity}%",
+        "format-charging": "󰂄  {capacity}%",
+        "format-full": "󰁹  {capacity}%",
+
+        "format-icons": [
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ],
+
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+
+        "tooltip-format": "{capacity}% - {time}"
+    },
+
+    "network": {
+        "format-wifi": "󰤨  {essid}",
+        "format-ethernet": "󰈀  {ifname}",
+        "format-disconnected": "󰤭  Disconnected",
+        "tooltip-format": "{ifname}: {ipaddr}"
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 6
+    },
+
+    "custom/pikachu": {
+        "exec": "~/.config/waybar/pikachu/run.sh",
+        "return-type": "text",
+        "format": "",
+        "image-path": "~/.config/waybar/pikachu/current.png",
+        "icon-size": 42,
+        "tooltip": false
+    },
+}
