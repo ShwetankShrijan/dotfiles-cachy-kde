@@ -4,6 +4,10 @@ My personal Linux configuration files.
 
 * **OS** - CachyOS 
 * **DE** - KDE Plasma 6
+* **Kernel** - 7.2.2-1-cachyos
+* **WM** - KWin
+* **Shell** - fish
+* **Teeminal** - ghostty
 
 ## Configs
 
