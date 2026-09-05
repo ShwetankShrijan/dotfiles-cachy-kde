@@ -2,6 +2,9 @@
 
 My personal Linux configuration files.
 
+* **OS** - CachyOS 
+* **DE** - KDE Plasma 6
+
 ## Configs
 
 * **Fish** — shell configuration
